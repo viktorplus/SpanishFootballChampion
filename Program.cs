@@ -15,6 +15,10 @@
                     Console.WriteLine("3. Показать матчи за определенную дату");
                     Console.WriteLine("4. Показать матчи команды");
                     Console.WriteLine("5. Показать игроков, забивших голы за определенную дату");
+                    Console.WriteLine("6. Добавить информацию о матче");
+                    Console.WriteLine("7. Обновить информацию о матче");
+                    Console.WriteLine("8. Удалить матч");
+
 
                     string choice = Console.ReadLine();
                     switch (choice)
@@ -36,13 +40,13 @@
                             Linq.PrintScoringPlayersByDate(db, dateToPrint);
                             break;
                         case "6":
-
+                            Linq.AddMatchInfo(db);
                             break;
                         case "7":
-                            
+                            Linq.UpdateMatchInfo(db);
                             break;
                         case "8":
-
+                            Linq.DeleteMatch(db);
                             break;
                         case "9":
 

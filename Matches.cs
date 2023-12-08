@@ -15,6 +15,8 @@ namespace SpanishFootballChampion
         public int VisitorGoals { get; set; }
         public DateTime Date { get; set; }
 
+        public Matches() { }
+
         public Matches(int id, int localTeamId, int visitorTeamId, int localGoals, int visitorGoals, DateTime date)
         {
             Id = id;
@@ -24,6 +26,7 @@ namespace SpanishFootballChampion
             VisitorGoals = visitorGoals;
             Date = date;
         }
+
         public void Print()
         {
             Console.WriteLine($"Id: {Id}, LocalTeamId: {LocalTeamId}, VisitorTeamId: {VisitorTeamId}, LocalGoals: {LocalGoals}, VisitorGoals: {VisitorGoals}, Date: {Date}");

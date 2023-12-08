@@ -13,6 +13,7 @@ namespace SpanishFootballChampion
         public string TeamName { get; set; }
         public string Country { get; set; }
 
+        public Teams() { }
         public Teams(int id, string teamName, string country)
         {
             Id = id;

@@ -14,6 +14,8 @@ namespace SpanishFootballChampion
         public int MatchId { get; set; }
         public int Minute { get; set; }
 
+        public Goals() { }
+
        public Goals(int id, int playerId, int matchId, int minute)
         {
             Id = id;

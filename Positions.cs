@@ -11,6 +11,7 @@ namespace SpanishFootballChampion
         public int Id { get; set; }
         public string Name { get; set; }
 
+        public Positions() { }
         public Positions(int id, string name)
         {
             Id = id;
